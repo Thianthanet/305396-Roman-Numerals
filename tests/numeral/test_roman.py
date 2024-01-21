@@ -39,7 +39,4 @@ def test_to_roman(arabic_num, roman_num):
     
     assert result == roman_num
 
-def test_calling_function():
-    """"""
-    pass
     
