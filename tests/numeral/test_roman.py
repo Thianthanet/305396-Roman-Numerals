@@ -6,7 +6,7 @@
 import pytest
 
 #Project library
-from numeral.roman import to_roman
+from numerals.roman import to_roman
 
 @pytest.mark.parametrize(
     "arabic_num, roman_num"
