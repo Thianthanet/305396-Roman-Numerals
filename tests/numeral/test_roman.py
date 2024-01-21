@@ -26,7 +26,8 @@ from numerals.roman import to_roman
         # Subtraction
         (4, "IV"),
         (9, "IX"),
-        (3888, "MMMDCCCLXXXVIII")
+        (3888, "MMMDCCCLXXXVIII"),
+        (3999, "MMMCMXCIX")
     ]
 )
 def test_to_roman(arabic_num, roman_num):
