@@ -1,7 +1,3 @@
-"""Create Function"""
-
-import unittest
-
 def to_roman(num):
     if not 0 < num < 4000:
         raise ValueError("Input must be between 1 and 3888")
@@ -9,7 +5,7 @@ def to_roman(num):
     roman_numerals = [
         ("M", 1000),
         ("CM", 900),
-        ("DCCC", 800)
+        ("DCCC", 800),
         ("D", 500),
         ("CD", 400),
         ("C", 100),
@@ -30,6 +26,9 @@ def to_roman(num):
             num -= value
 
     return result
+
+# tests/numeral/test_roman.py
+import unittest
 
 class TestIntToRoman(unittest.TestCase):
     def test_positive_values(self):
