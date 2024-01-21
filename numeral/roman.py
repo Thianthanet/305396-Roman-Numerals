@@ -2,9 +2,9 @@
 
 def to_roman(arabic_num):
     if not 0 < arabic_num < 4000:
-        raise ValueError("Input must be between 1 and 3999")
+        raise ValueError("Input must be between 1 and 3888")
 
-    roman_numerals = [
+    roman_num = [
         ("M", 1000),
         ("CM", 900),
         ("D", 500),
@@ -21,7 +21,7 @@ def to_roman(arabic_num):
     ]
 
     result = ""
-    for roman, value in roman_numerals:
+    for roman, value in roman_num:
         while arabic_num >= value:
             result += roman
             arabic_num -= value
